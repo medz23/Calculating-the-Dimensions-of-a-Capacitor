@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Determinarea coeficientului global de transfer de căldură</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+
+      <div class="row">
+        <div class="col-md-3">
+
+
+
+    <img src="./img/logo-poli.png" class="img1" alt="">
+    </div>
+    <div class="col-md-6">
+      <div class="continut">
+
+      <h3>Determinarea coeficientului global de transfer de căldură</h3>
+      </div>
+      </div>
+      <div class="col-md-3">
+      <img src="./img/logo-facultate.png" class="img2" alt="">
+    </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="container stuff">
+    <h5 class="text-col highlight">Date de Intrare</h5>
+    <div class="row">
+      <div class="col-xs-6 col-md-3">
+
+
+        <div class="box">
+          <label for="q_c">Q<span class="right"><span class="small_letter">c </span>[] = </span></label>
+          <input type="number" id="q_c" class="input-stuff" name="q_c" class="input-stuff" autocomplete="on" placeholder="...">
+        </div>
+
+        <div class="box">
+          <label for="w_p">W<span class="right"><span class="small_letter">p </span>[] = </span></label>
+          <input type="number" id="w_p" name="w_p" class="input-stuff" autocomplete="on" placeholder="...">
+        </div>
+
+        <div class="box">
+          <label for="b">b <span class="right">[] = </span></label>
+          <input type="number" id="b" name="b" class="input-stuff" autocomplete="on" placeholder="...">
+        </div>
+
+        <div class="box">
+          <label for="debit_agent">m <span class="right"> = </span>[]</label>
+          <input type="number" id="debit_agent" name="debit_agent" class="input-stuff" autocomplete="on" placeholder="...">
+        </div>
+
+        <div class="box">
+          <label for="rho_apa">ρ<span class="right"><span class="small_letter">apa </span>[] = </span></label>
+          <input type="number" id="rho_apa" name="rho_apa" class="input-stuff" autocomplete="on" placeholder="...">
+        </div>
+
+        <div class="box">
+          <label for="rho_agentG">ρ<span class="right"><span class="small_letter">agentG </span>[] = </span></label>
+          <input type="number" id="rho_agentG" name="rho_agentG" class="input-stuff" autocomplete="on" placeholder="...">
+        </div>
+
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <div class="box">
+          <label for="rho_agentL">ρ<span class="right"><span class="small_letter">agentL </span>[] = </span></label>
+          <input type="number" id="rho_agentL" name="rho_agentL" class="input-stuff" autocomplete="on" placeholder="...">
+        </div>
+
+        <div class="box">
+          <label for="miu_apa">μ<span class="right"><span class="small_letter">apa </span>[ - ] = </span></label>
+          <input type="number" id="miu_apa" name="miu_apa" class="input-stuff" autocomplete="on" placeholder="...">
+        </div>
+
+        <div class="box">
+          <label for="miu_agentG">μ<span class="right"><span class="small_letter">agentG </span>[ - ] = </span></label>
+          <input type="number" id="miu_agentG" name="miu_agentG" class="input-stuff" autocomplete="on" placeholder="...">
+        </div>
+        <div class="box">
+          <label for="miu_p">μ<span class="right"><span class="small_letter">p </span>[ - ] = </span></label>
+          <input type="number" id="miu_p" name="miu_p" class="input-stuff" autocomplete="on" placeholder="...">
+        </div>
+
+        <div class="box">
+          <label for="beta">β <span class="right">[ - ] = </span></label>
+          <input type="number" id="beta" name="beta" class="input-stuff" autocomplete="on" placeholder="...">
+        </div>
+
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <div class="box">
+          <label for="lambda_apa">λ<span class="right"><span class="small_letter">apa</span>[] = </span></label>
+          <input type="number" id="lambda_apa" name="lambda_apa" class="input-stuff" autocomplete="on" placeholder="...">
+        </div>
+
+        <div class="box">
+          <label for="lambda">Λ <span class="right">[] = </span></label>
+          <input type="number" id="lambda" name="lambda" class="input-stuff" autocomplete="on" placeholder="...">
+        </div>
+
+        <div class="box">
+          <label for="lambda_agent">λ<span class="right"><span class="small_letter">agent</span>[] = </span></label>
+          <input type="number" id="lambda_agent" name="lambda_agent" class="input-stuff" autocomplete="on" placeholder="...">
+        </div>
+
+        <div class="box">
+          <label for="lambda_placa">λ<span class="right"><span class="small_letter">placa</span>[] = </span></label>
+          <input type="number" id="lambda_placa" name="lambda_placa" class="input-stuff" autocomplete="on" placeholder="...">
+        </div>
+
+        <div class="box">
+          <label for="t_c">T<span class="right"><span class="small_letter">c </span>[] = </span></label>
+          <input type="number" id="t_c" name="t_c" class="input-stuff" autocomplete="on" placeholder="...">
+        </div>
+
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <div class="box">
+          <label for="t_wi">T<span class="right"><span class="small_letter">wi </span>[] = </span></label>
+          <input type="number" id="t_wi" name="t_wi" class="input-stuff" autocomplete="on" placeholder="...">
+        </div>
+
+        <div class="box">
+          <label for="t_we">T<span class="right"><span class="small_letter">we </span>[] = </span></label>
+          <input type="number" id="t_we" name="t_we" class="input-stuff" autocomplete="on" placeholder="...">
+        </div>
+
+        <div class="box">
+          <label for="h_i">h<span class="right"><span class="small_letter">i </span>[] = </span></label>
+          <input type="number" id="h_i" name="h_i" class="input-stuff" autocomplete="on" placeholder="...">
+        </div>
+
+        <div class="box">
+          <label for="h_e">h<span class="right"><span class="small_letter">e </span>[] = </span></label>
+          <input type="number" id="h_e" name="h_e" class="input-stuff" autocomplete="on" placeholder="...">
+        </div>
+
+        <div class="box">
+          <label for="l_p">L<span class="right"><span class="small_letter">p </span>[] = </span></label>
+          <input type="number" id="l_p" name="l_p" class="input-stuff" autocomplete="on" placeholder="...">
+        </div>
+
+        <div class="box">
+          <label for="delta_p">δ<span class="small_letter">p </span><span class="right">[] = </span></label>
+          <input type="number" id="delta_p" name="delta_p" class="input-stuff" autocomplete="on" placeholder="...">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<button id="button-calcul" class="centric btn btn-primary" type="button" name="button">Calculeaza</button>
+<br>
+
+      <div class="container">
+        <h5 class="text-col highlight">Rezultate</h5>
+
+
+    <div class="row margine">
+      <div class="col-xs-12 col-md-10">
+        <h6 class="text-col">Viteza de curgere a agentului frigorific prin condensator la intrare = <span id="w_agentG">...</span> <span class="unitate-de-masura">[]</span> </h6>
+        <h6 class="text-col">Viteza de curgere a agentului frigorific prin condensator la iesire = <span id="w_agentL">...</span> <span class="unitate-de-masura">[]</span></h6>
+        <h6 class="text-col">Diametrele conductelor de intrare si iesire a apei în condensator =<span id="d_i_apa">...</span> <span class="unitate-de-masura">[]</span></h6>
+        <h6 class="text-col">Diametrul conductei pentru agentul frigorific la intrare = <span id="d_i_agent">...</span> <span class="unitate-de-masura">[]</span></h6>
+        <h6 class="text-col">Diametrul conductei pentru agentul frigorific la iesire = <span id="d_e_agent">...</span> <span class="unitate-de-masura">[]</span> </h6>
+        <h6 class="text-col">Pierderi de presiune din condesator pentru agent = <span id="deltap_agent">...</span> <span class="unitate-de-masura">[]</span></h6>
+        <h6 class="text-col">Pierderi de presiune din condesator pentru apa = <span id="deltap_apa">...</span> <span class="unitate-de-masura">[]</span></h6>
+        <h6 class="text-col">Grosimea unei plăci = <span id="w">...</span> <span class="unitate-de-masura">[]</span></h6>
+        <h6 class="text-col">Numar de iteratii = <span id="iteratii">...</span> <span class="unitate-de-masura">[]</span></h6>
+        <h6 class="text-col">Numarul de placi = <span id="n_p">...</span> <span class="unitate-de-masura">[]</span> </h6>
+        <h6 class="text-col">Eroarea = <span id="eroare">...</span> <span class="unitate-de-masura">[]</span> </h6>
+
+
+  </div>
+</div>
+
+  <script type="text/javascript" src="./app.js"></script>
+</body>
+
+</html>
