@@ -1,7 +1,7 @@
 # Calculating-the-Dimensions-of-a-Water-Based Condenser
 It's a tool for correcting student's projects, you can calculate the right values in a few seconds.
 
-The project was guided by Professor Apostol Valentin. 
+The project was guided by Prof. Dr. Ing. Apostol Valentin. 
 
 I've used Math's functions in JavaScript.
 
@@ -12,3 +12,9 @@ Before creating this program for such a project it took many hours, but now you 
 
 ## Preview
 
+
+![site](https://github.com/medz23/Calculating-the-Dimensions-of-a-Water-Based-Condenser/blob/main/Readme-imgs/2.png)
+![site](https://github.com/medz23/Calculating-the-Dimensions-of-a-Water-Based-Condenser/blob/main/Readme-imgs/3.png)
+
+### Results in SolidWorks
+![login part](https://github.com/medz23/Calculating-the-Dimensions-of-a-Water-Based-Condenser/blob/main/Readme-imgs/4.png)
