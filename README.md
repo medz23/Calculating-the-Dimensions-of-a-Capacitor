@@ -1,6 +1,8 @@
 # Calculating-the-Dimensions-of-a-Water-Based Condenser
 It's a tool for correcting student's projects, you can calculate the right values in a few seconds.
 
+The project was guided by Professor Apostol Valentin. 
+
 I've used Math's functions in JavaScript.
 
 This calculator needs some initial data that you can obtain by doing thermodynamic calculations depending on the refrigerants you use, these needed values can be calculated in specialized programs such as EES.
@@ -9,3 +11,4 @@ Before creating this program for such a project it took many hours, but now you 
 
 
 ## Preview
+
